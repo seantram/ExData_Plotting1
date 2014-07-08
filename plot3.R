@@ -15,7 +15,7 @@ input$dt <- strptime(paste(input$Date, input$Time, sep = " "), format="%d/%m/%Y 
 
 # Plotting
 
-png("plot3.png", width = 480, height = 480, bg = "transparent")
+png("plot3.png", width = 480, height = 480)
 
         with(input, plot(dt, Sub_metering_1, type="n", xlab="", ylab="Energy sub metering"))
         with(input, lines(dt, Sub_metering_1 ))

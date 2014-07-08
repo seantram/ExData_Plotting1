@@ -20,7 +20,7 @@ input$dt <- strptime(paste(input$Date, input$Time, sep = " "), format="%d/%m/%Y 
 
 # Plotting
 
-png("plot4.png", width = 480, height = 480, bg = "transparent")
+png("plot4.png", width = 480, height = 480)
   par(mfrow = c(2, 2))
     with(input, {
   

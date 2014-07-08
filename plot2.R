@@ -11,7 +11,7 @@ input$gap <- as.numeric(levels(input$Global_active_power))[input$Global_active_p
 input$dt <- strptime(paste(input$Date, input$Time, sep = " "), format="%d/%m/%Y %H:%M:%S")
 
 # Plotting
-png("plot2.png", width = 480, height = 480, bg = "transparent")
+png("plot2.png", width = 480, height = 480)
 
       with(input, plot(dt, gap, type="l", xlab="", ylab="Global Active Power (Kilowatts)"))
 

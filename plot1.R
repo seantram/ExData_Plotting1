@@ -11,7 +11,7 @@ input <-subset(read.table("household_power_consumption.txt", sep=";", dec="." , 
 gap <- as.numeric(levels(input$Global_active_power))[input$Global_active_power]
 
 # Plotting
-png("plot1.png", width = 480, height = 480, bg = "transparent")
+png("plot1.png", width = 480, height = 480)
 
       hist(gap, col ="red", main="Global Active Power", xlab="Global Active Power (Kilowatts)")
 
